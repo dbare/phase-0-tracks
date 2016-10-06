@@ -12,7 +12,7 @@ A branch is a copy of an original file that is able to edited without changing t
 
 * What is a commit? What makes a good commit message?
 
-A commit is when you take a branch and push in back into the original file.  A good commit message goes into some detail about what is in that commit.
+A commit is when you take a branch and push in back into the original file.  A good commit message goes into some detail about what changes were made in the commit.
 
 * What is a merge conflict?
 
