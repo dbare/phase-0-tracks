@@ -64,3 +64,9 @@ is nested inside the contact-info section) */
 #contact-info p {
   line-height: .8;
 }
+.job {
+  background-color: #e9e5dc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}

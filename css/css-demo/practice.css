@@ -12,3 +12,11 @@
 .unordered-list {
 	font-size: .8em;
 }
+
+a:hover {
+	color: red;
+}
+
+section:first-of-type { 
+	color: blue;
+}
