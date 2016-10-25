@@ -1,0 +1,14 @@
+1. Withdrawing Money from ATM Algorithm
+
+	-locate your ATM card
+	-insert card into ATM
+		-make sure magnetic strip is face down
+		-make sure magnetic strip is on the right side of the card
+		-remove card
+	-enter your 4 digit PIN number
+		- press enter
+	-select “withdraw”
+	-select “checking”
+	-select the amount you would like to withdraw
+		-accept transaction fees
+	-Pull money out of ATM after its despensed
