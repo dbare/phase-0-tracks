@@ -58,11 +58,13 @@ loop do
 				if allergies == "sunshine"
 				puts "Probably a Vamp" 
 				elsif allergies == "done"
-				 
+					print "Nevermind what do these questions have to do with anything?"
+
 				end
 	end
 
 	break if surveys_taken == number_of_surveys
+	print "Nevermind what do these questions have to do with anything?"
 end
 
 
