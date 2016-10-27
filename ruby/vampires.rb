@@ -28,9 +28,13 @@ loop do
 	insurance = gets.chomp
 	insurance = insurance.to_s
 
+	puts "Do you have any allergies?"
+	allergies = gets.chomp
+	allergies = ""
+
 	real_age = current_year - year_born
 
-	if real_age == age && (garlic_bread == "y" || insurance == "y")
+	if real_age == age && garlic_bread == "y" || insurance == "y"
 		puts "Probably not a Vamp."
 
 	elsif real_age != age && (garlic_bread == "y" || insurance =="y")
@@ -42,11 +46,22 @@ loop do
 	#Can't get this to output correctly, I tried nesting ths inside of another if statement to no avail.
 	elsif vamp_name == "Drake Cula" || vamp_name == "Tu Fang"
 		puts "Definitely a Vamp."
-
+		
 	else
 		puts "Results inconclusive."
 
 	end
+				
+	until allergies == "done" || allergies == "sunshine"
+			puts "What other allergies do you have?"
+			allergies = gets.chomp
+				if allergies == "sunshine"
+				puts "Probably a Vamp" 
+				elsif allergies == "done"
+				 
+				end
+	end
+
 	break if surveys_taken == number_of_surveys
 end
 
