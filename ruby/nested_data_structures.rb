@@ -7,7 +7,7 @@ overwatch = {
           total_roster_spots: 6,
           dps_spots: 2
       },
-      meals: [
+      heros: [
           'Mcree',
           'Reaper',
           'Genji'
