@@ -6,7 +6,8 @@
 # -create a string conttainng all consonants
 #  =iterate input over string to advance consonants
 full_name = ''
-alias_hash = {}
+alias_array = []
+secret_identity = []
 hash_counter = 0
 
 
@@ -43,20 +44,19 @@ while full_name != "quit" do
 puts "Please enter a name to get an alias:"
 	full_name = gets.chomp.downcase
 	full_name = full_name.to_s
-
-	
+	secret_identity << full_name
+		if full_name == "quit"
+			secret_identity.delete("quit")
+			break 
+		end
 
 	reversed_name = swap_names(full_name)
 	swaped_vowels = vowel_adv(reversed_name)
-	p consonant_adv(swaped_vowels)	
-
-
-#need to out put hash so it lookes like -> alias_hash = {full_name => "#{consonant_adv(swaped_vow)}"}
-
-  break if full_name == "quit"
-  alias_hash[:"#{consonant_adv(swaped_vowels)}"] 
+	secret_alias = consonant_adv(swaped_vowels)	
+	p secret_alias
+	alias_array << secret_alias
 
 end
 
-
-p alias_hash
+p alias_array
+p secret_identity
