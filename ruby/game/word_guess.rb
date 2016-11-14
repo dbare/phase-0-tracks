@@ -16,7 +16,7 @@ class WordGuess
 		placeholders
 	end
 end
-=begin
+
 word_game = WordGuess.new
 wrong_guess = 0
 
