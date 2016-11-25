@@ -44,6 +44,28 @@ p hash
 p array.delete_if {|letter| letter > 'b'}
 p hash.delete_if{ |key, value| value == 'wet'}
 
+#re-declaring array and hash since delete_if is destructive
+array = ['a','b','c','d']
+hash = {
+  grass: 'green',
+  ocean: 'blue',
+  wind: 'loud',
+  rain: 'wet'
+}
+
+#modified data: .select
+
+p array.select {|letter| letter > 'b'}
+p hash.select {|key, value| value == 'wet'}
+
+#modified data: .reject
+p array.reject{|letter| letter > 'b'}
+p hash.rejcet{|key, value| value == 'wet'}
+
+#modified data: drop_while
+p array.drop_while{|letter| letter < 'b'}
+
+#could not find a way to do it for a hash.....
 
 
 
