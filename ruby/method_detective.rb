@@ -32,7 +32,7 @@ puts" suspects".prepend("the usual")
 
 string_2 = "The case of the disappearing last letter"
 
-puts"The case of the disappearing last letter".chop
+puts"The case of the disappearing last letter"
 puts string_2[0...37]
 # => "The case of the disappearing last lette"
 
