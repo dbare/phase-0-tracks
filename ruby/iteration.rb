@@ -39,3 +39,13 @@ hash = {
 #before they are modified
 p array
 p hash
+
+#modified data to see changes
+p array.delete_if {|letter| letter > 'b'}
+p hash.delete_if{ |key, value| value == 'wet'}
+
+
+
+
+
+
