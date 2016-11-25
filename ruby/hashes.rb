@@ -25,3 +25,31 @@ user_info = {
 }
 
 p user_info
+
+puts "What information would you like to update?"
+update = gets.chomp
+
+if udpdate == "none"
+elsif update == "name"
+	puts "what is your name?"
+	user_info[:user_name] = gets.chomp
+elsif update == "number of children"
+	puts "How many children do you have?"
+	user_info[:children_num] = gets.chomp
+elsif update == "age"
+	puts "what is your age?"
+	user_info[:age] = gets.chomp
+else update == "theme"
+	puts "what theme do you want?"
+	user_info[:theme] = gets.chomp
+end 
+
+p user_info
+	}
+		
+
+
+
+
+
+
