@@ -29,7 +29,7 @@ p user_info
 puts "What information would you like to update?"
 update = gets.chomp
 
-if udpdate == "none"
+if update == "none"
 elsif update == "name"
 	puts "what is your name?"
 	user_info[:user_name] = gets.chomp
@@ -45,11 +45,6 @@ else update == "theme"
 end 
 
 p user_info
-	}
 		
-
-
-
-
 
 
