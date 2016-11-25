@@ -60,7 +60,7 @@ p hash.select {|key, value| value == 'wet'}
 
 #modified data: .reject
 p array.reject{|letter| letter > 'b'}
-p hash.rejcet{|key, value| value == 'wet'}
+p hash.reject{|key, value| value == 'wet'}
 
 #modified data: drop_while
 p array.drop_while{|letter| letter < 'b'}
