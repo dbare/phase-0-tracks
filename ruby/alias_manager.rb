@@ -1,11 +1,16 @@
 full_name = ''
-alias_arrya = []
+alias_array = []
 secret_identity = []
 
 def swap_names(name)
 	name = name.split(' ').reverse
+	name_new = name.join
+end 
+def vowel_adv(name)
+	vowels = ['a','e','i','o','u']
+	name = name.split('')
 	name_new = name.map do |letter|
-		if vowels.inculde?(letter)
+		if vowels.include?(letter)
 			vowels.rotate[vowels.index(letter)]
 		else
 			letter
@@ -24,4 +29,32 @@ def costonant_adv(name)
 		end
 	end
 	name_new.join
+end
+
+while full_name != 'quit' do
+	puts 'please enter a name:'
+	full_name = gets.chomp.downcase
+	full_name = full_name.to_s
+	secret_identity << full_name
+		if full_name == 'quit'
+			secret_identity.delete('quit')
+			break
+		end 
+
+	reversed_name = swap_names(full_name)
+	swaped_vowels = vowel_adv(reversed_name)
+	secret_alias = costonant_adv(swaped_vowels)
+	alias_array << secret_alias
+	p secret_alias
 end 
+
+p alias_array
+p secret_identity
+
+
+
+
+
+
+
+	
