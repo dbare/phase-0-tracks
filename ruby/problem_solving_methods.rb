@@ -33,15 +33,55 @@ def fib_method(input)
 fibonacci_array = []
 count = 0
 
-until count
+	until count == input
+		if count == 0
+			fibonacci_array << 0
+			count += 1
+		elsif count == 1
+			fibonacci_array << 1
+			count += 1
+		else
+			fibonacci_array << fibonacci_array[count-1] + fibonacci_array[count-2]
+			count +=1
+		end 
+	end
+	fibonacci_array
+end 
 
+p fib_method(100).include?(218922995834555169026)
 
+#Release 2
+			
+=begin
+-define the method with the array as argument
+-define false statement that can become true when array is sorted
+-set variable equal to length of array
+-loop through array
+	-if the value of the array the index is greater than the value of the array at the next index position, swap them
+	-if the if statment is true, the false statement becomes true
+-end loop if there is no swap
+-print array
+=end
 
+def bubble_sort(array)
+	num = array.length
 
+	loop do
+		swapped = false
+		(num-1).times do |i|
+			if array[i] > array[i+1]
+				array[i], array[i+1] = array[i+1], array[i]
+				swapped = true
+			end 
+		end 
+		break if not swapped
+	end 
+	array
+end
 
+test_sort = [5, 3, 7, 1, 2, 9, 0, 4, 6, 8, 4]
 
-
-
+p bubble_sort(test_sort)
 
 
 
