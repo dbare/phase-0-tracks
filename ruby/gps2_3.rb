@@ -52,5 +52,8 @@ list = grocery_list('apples oranges pears')
 grocery_list('apples oranges pears')
 p add_item(list, 'cake', 20)
 p remove_item(list, 'pie')
-p quantity_update(list, 'pizza', 50)
+#p quantity_update(list, 'pizza', 50)
 p print_list(list)
+
+
+#unable to get the quanity_update method to work
