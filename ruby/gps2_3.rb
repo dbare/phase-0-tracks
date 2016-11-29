@@ -36,7 +36,7 @@ end
 # input: the key and desired value
 def quantity_update(list_hash, grocery_item, adjusted_qty)
 # steps: iterate through the list(hash) and replace the value of the key/value pair
-	list_hash.each{|item, qty| list_hash[grocery_item] = ajusted_qty}
+	list_hash.each{|item,qty| list_hash[grocery_item] = adjusted_qty}
 end
 # output: updated list
 
@@ -45,11 +45,11 @@ end
 def print_list(full_grocery_hash)
 # steps: iterate through the list(hash) and print so it looks nice
 # output: the list looking prettier
-	full_grocery_hash.each {|key, value| pts "#{key}"+":"+" #{value}"}
+	full_grocery_hash.each {|key, value| puts "#{key}"+":"+" #{value}"}
 end
 
-list = create_grocery_list('apples oranges pears')
-create_grocery_list('apples oranges pears')
+list = grocery_list('apples oranges pears')
+grocery_list('apples oranges pears')
 p add_item(list, 'cake', 20)
 p remove_item(list, 'pie')
 p quantity_update(list, 'pizza', 50)
