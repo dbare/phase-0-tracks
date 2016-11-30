@@ -1,5 +1,5 @@
 class Santa
-
+	attr_accessor :gender, :age, :ethnicity
 
 	def initialize(gender, ethnicity)
 		puts "Initializing Santa instance...."
@@ -16,11 +16,21 @@ class Santa
 	def eat_milk_and_cookies(flavor)
 		puts "That was a good #{flavor} cookie!"
 	end
+	def celebrate_birthday(current_age)
+		@celebrate_birthday = current_age + 1
+		p @celebrate_birthday
+	end
+	def get_mad_at=(reindeer_name)
+			@get_mad_at = @reindeer_ranking.last(reindeer_name)
+			p @get_mad_at
+	end
 end
 
 santa = Santa.new("male", "black")
 santa.speak
 santa.eat_milk_and_cookies("Oatmeal Raisin")
+santa.celebrate_birthday(24)
+#santa.get_mad_at("Dasher")  ---> not entirely sure why this isnt working
 
 =begin
 santas = []
