@@ -1,5 +1,8 @@
 class Puppy
 
+  def initialize
+    print "initializing new puppy instance..."
+  end
   def fetch(toy)
     puts "I brought back the #{toy}!"
     toy
@@ -9,20 +12,16 @@ class Puppy
     puts
   end
   def roll_over
-    print "roll over"
-    puts
-  end
-  def dog_years(year_old)
-    dog_years = year_old/7
-    print dog_years
+    puts "*rolls over*"
+  end 
+  def dog_years(years_old)
+    dog_age = years_old/7
+    print dog_age
     puts
   end
   def eat(food)
     puts "I love eating #{food}!"
     puts
-  end
-  def initialize
-    print "initializing new puppy instance..."
   end
 end
 
