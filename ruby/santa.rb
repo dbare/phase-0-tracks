@@ -2,8 +2,7 @@ number_of_santas = 0
 
 until number_of_santas == 50 do
 	class Santa
-		attr_reader :gender, :age, :ethnicity
-		#attr_accessor :gender, :age, :ethnicity
+		attr_accessor :gender, :age, :ethnicity
 
 		def initialize(gender, ethnicity)
 			example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
@@ -21,13 +20,12 @@ until number_of_santas == 50 do
 		def eat_milk_and_cookies(flavor)
 			puts "That was a good #{flavor} cookie!"
 		end
-		def celebrate_birthday(current_age)
-			@celebrate_birthday = current_age + 1
-			p @celebrate_birthday
+		def celebrate_birthday
+			@age += 1
 		end
 		def get_mad_at=(reindeer_name)
-				@get_mad_at = @reindeer_ranking.last(reindeer_name)
-				p @get_mad_at
+				@reindeer_ranking = @reindeer_ranking.last(reindeer_name)
+				p @reindeer_ranking
 		end
 		puts "This Santa is #{@age} years old and is a great Santa!"
 		puts "They are #{@ethnicity}."
@@ -35,8 +33,6 @@ until number_of_santas == 50 do
 	end
 	number_of_santas += 1
 end 
-
-santa = Santa.new(' ',' ')
 
 =begin
 santa = Santa.new("male", "black")
