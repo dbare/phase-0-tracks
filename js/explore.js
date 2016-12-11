@@ -1,5 +1,6 @@
 // Define a function for reversing a string (takes a string as parameter)
 function reverseString(str) {
+	
     // Use the split method to return an array
     var splitString = str.split(""); 
  
