@@ -1,0 +1,65 @@
+Release 2
+
+1. Command: SELECT * FROM games;
+
+	 Output:  1|Final Fantasy VII|true|1
+					  2|Overwatch|false|1
+					  3|The Witcher 3|true|1
+					  4|Bioshock|false|2
+					  5|Gear of War|false|2
+
+
+2. Command: UPDATE games SET RPG="true" WHERE game_name="Bioshock";
+
+	 Output: 4|Bioshock|true|2 (this is what the updated row looks like)
+
+
+3. Command: SELECT consoles.id, consoles.console, games.id, games.game_name, games.rpg, games.console_id FROM consoles, games WHERE consoles.id =games.console_id;
+
+	 Output:  1|Playstation|1|Final Fantasy VII|true|1
+					  1|Playstation|2|Overwatch|false|1
+					  1|Playstation|3|The Witcher 3|true|1
+					  2|Xbox|4|Bioshock|true|2
+					  2|Xbox|5|Gear of War|false|2
+
+
+4. Command: SELECT consoles.console, games.game_name, games.rpg FROM consoles, games WHERE consoles.id =games.console_id;
+
+	 Output:  Playstation|Final Fantasy VII|true
+						Playstation|Overwatch|false
+						Playstation|The Witcher 3|true
+						Xbox|Bioshock|true
+						Xbox|Gear of War|false
+
+
+4. Command:  DELETE FROM games WHERE game_name="Overwatch";
+
+	 Output:  1|Final Fantasy VII|true|1
+						3|The Witcher 3|true|1
+						4|Bioshock|true|2
+						5|Gear of War|false|2
+
+
+Release 3
+
+Command: Select consoles.id, games.id, games.rpg, games.console_id FROM consoles, games Where consoles.id=1;
+
+Output:  1|1|true|1
+				 1|3|true|1
+				 1|4|true|2
+				 1|5|false|2
+
+Command: SELECT consoles.console, games.game_name, games.rpg FROm consoles, games WHERE consoles.id=1;
+
+Output: Playstation|Final Fantasy VII|true
+				Playstation|The Witcher 3|true
+				Playstation|Bioshock|true
+				Playstation|Gear of War|false
+
+
+
+
+
+
+
+
