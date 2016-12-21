@@ -1,0 +1,3 @@
+2. There are a few different ones: Radical concept, Enlightenment, the Terminal Case and Complete Control are a few of them.
+
+3. A VPS is a server that you create on a computer.  Some advantages are: you will have a huge space and bandwidth which enables you to do what you like, you can upgrade or downgrade your subscription anytime, you can confiure antthing you wish on the server as you own it, Run your own batch files to create mulitple services inside the server using shell acess. Those are just a few.
