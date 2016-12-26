@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Practice Site</title>
+</head>
+<body>
+
+<p>
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo
+</p>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<p id="dive-p">Paragraph in 'div' tag</p></div>
+
+<div id="return">click to restore paragraph tags</div>
+
+<script type="text/javascript" src="Script/jquery-3.1.1.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("p").click(function(){
+		$(this).hide(300);
+    });
+	$("div").hide(500).show(500);
+	$("p").slideToggle(1000).slideToggle(1000);
+	$("body").toggle(2000).toggle(2000);
+	$("#div-p").css({color:'green', fontFamily: 'Helvetica'});
+	$("#return").click(function(){
+		$("p").show(300);
+    });
+});
+</script>
+
+</body>
+</html>
